@@ -8,13 +8,15 @@ body {
     padding:2%
 }
 
-
-
 .service{
-    padding: 10px;
-    float: right;
-    width: 150px;
-   
+    padding: 1%;
+    margin:1%;
+    width:29.33%;
+    height: 140px;
+    float: left;
+    height:140px;
+   background:#eee;
+   text-align: center;
 }
 
 .services:after{
@@ -23,3 +25,23 @@ body {
     display:block;
 }
 
+.content{
+    padding:10px;
+    clear: left;
+    margin: 10px 1%;
+    line-height: 1.5;
+}
+
+section, aside {
+    width: 46%;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    background:#f2f2f2;
+}
+
+.columns:after{
+    clear:both;
+    content:"";
+    display:block
+}
