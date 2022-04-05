@@ -2,46 +2,24 @@ body {
     background: #eee;
 }
 
-.wrapper {
-background: #fff;
-max-width: 960px;
-height: auto;
-margin: 0 auto;
-padding: 20px;
+.wrapper{
+    background: #fff;
+    margin: 0 auto;
+    padding:2%
 }
 
 
 
-.wrapper:after {
-content: "";
-clear: both;
-display: block;
+.service{
+    padding: 10px;
+    float: right;
+    width: 150px;
+   
 }
 
-.services:after {
-    content:"";
+.services:after{
     clear:both;
-    display: block;
+    content:"";
+    display:block;
 }
 
-.service h2, .service p {
-    color: #999;
-    margin: 10px 0;
-    text-align: center;     
-}
-
-.service {
-    background: #eee;
-    width: 29.33%;
-    padding: 1%;
-    margin: 1%;
-    float: left;
-    height: 140px;
-
-}
-
-.content {
-    background:lightpink;
-    padding: 50px 10px;
-    
-}
