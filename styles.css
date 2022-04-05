@@ -2,7 +2,6 @@ body {
     background: #eee;
 }
 
-
 .wrapper {
 background: #fff;
 max-width: 960px;
@@ -11,10 +10,18 @@ margin: 0 auto;
 padding: 20px;
 }
 
+
+
 .wrapper:after {
+content: "";
+clear: both;
+display: block;
+}
+
+.services:after {
     content:"";
-    display:block;
     clear:both;
+    display: block;
 }
 
 .service h2, .service p {
@@ -31,4 +38,10 @@ padding: 20px;
     float: left;
     height: 140px;
 
+}
+
+.content {
+    background:lightpink;
+    padding: 50px 10px;
+    
 }
