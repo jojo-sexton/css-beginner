@@ -12,6 +12,27 @@ body p {
     padding:2%
 }
 
+#banner{
+    max-height: 200px;
+    overflow: hidden;
+    margin:1%;
+    position: relative;
+}
+
+#banner h2{
+ 
+    position: absolute;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    top:20px;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+
+    
+}
+
 .service{
     padding: 1%;
     margin:1%;
@@ -72,4 +93,28 @@ section, aside {
     clear: both;
     content:"";
     display:block;
+}
+
+nav {
+    background: #333;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+nav ul:after{
+    clear: both;
+    content:"";
+    display:block;
+}
+
+nav li {
+    float: right;
+    margin-right: 5%;
+    list-style-type: none;
+    color:#fff;
+    font-size:1em;
+
+
 }
