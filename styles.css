@@ -2,6 +2,10 @@ body {
     background: #eee;
 }
 
+body p {
+    text-align: justify;
+}
+
 .wrapper{
     background: #fff;
     margin: 0 auto;
@@ -17,7 +21,20 @@ body {
     height:140px;
    background:#eee;
    text-align: center;
+   position:relative;
 }
+
+
+.service:nth-child(1){
+    top:5px;
+}
+.service:nth-child(2){
+    top:10px;
+}
+.service:nth-child(3){
+    top:15px;
+}
+
 
 .services:after{
     clear:both;
@@ -31,16 +48,17 @@ body {
     margin: 20px 1%;
 }
 
-.content p {
+.content{
     -webkit-column-count: 3;
     column-count: 3;
-    -webkit-column-gap: 50px;
-    column-gap: 50px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
     -webkit-column-rule: 1px solid #ccc;
     column-rule: 1px solid #ccc;
     text-align: justify;
-
 }
+
+
 
 section, aside {
     width: 46%;
@@ -51,7 +69,7 @@ section, aside {
 }
 
 .columns:after{
-    clear:both;
+    clear: both;
     content:"";
-    display:block
+    display:block;
 }
