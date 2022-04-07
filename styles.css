@@ -45,6 +45,10 @@ body p {
    position:relative;
 }
 
+.service h2{
+    color:grey;
+}
+
 
 .service:nth-child(1){
     top:5px;
@@ -56,6 +60,10 @@ body p {
     top:15px;
 }
 
+.services {
+max-height: 100px;
+overflow: hidden;
+}
 
 .services:after{
     clear:both;
