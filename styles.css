@@ -21,25 +21,32 @@ body{
 
 .box {
     height: 100px;
-    width:320px;
+    flex-basis: 300px;
+    flex-grow:1;
+    
     
 }
 
+/* the difference btween flex basis and min-width is that flex basis will shrink to fit when the viewport is less than the min-width, no need to scroll
+
+flex: grow - shrink - basis*/
+
 .one{
     background: red;
+
    
 }
 
 .two{
     background: yellow;
-  
+
 
    
 }
 
 .three{
     background: blue;
-   
+ 
    
 
     
