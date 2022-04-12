@@ -18,7 +18,6 @@ body{
     display:flex;
 }
 
-
 .box {
     height: 100px;
     min-width: 100px;
@@ -27,13 +26,16 @@ body{
 
 .one{
     background: red;
+    flex-grow: 2;
 }
 
 .two{
     background: yellow;
+    flex-grow: 3;
 }
 
 .three{
     background: blue;
+    flex-grow: 1;
 }
 
