@@ -1,25 +1,39 @@
-body {
-    background: #eee;
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eee;
 }
 
 .wrapper{
-    background: #fff;
     margin: 0 auto;
-    padding:2%
+    max-width: 960px;
+    width:100%;
+}
+
+.flex-box{
+    background:#fff;
+    display:flex;
 }
 
 
-
-.service{
-    padding: 10px;
-    float: right;
-    width: 150px;
-   
+.box {
+    height: 100px;
+    min-width: 100px;
+    float: left;
 }
 
-.services:after{
-    clear:both;
-    content:"";
-    display:block;
+.one{
+    background: red;
+}
+
+.two{
+    background: yellow;
+}
+
+.three{
+    background: blue;
 }
 
