@@ -16,6 +16,7 @@ body{
 .flex-box{
     background:#fff;
     display:flex;
+    flex-wrap:wrap-reverse;
 }
 
 .box {
@@ -26,19 +27,19 @@ body{
 
 .one{
     background: red;
-    flex-shrink: 1;
+   
 }
 
 .two{
     background: yellow;
-    flex-shrink: 2;
+  
 
    
 }
 
 .three{
     background: blue;
-    flex-shrink: 3;
+   
    
 
     
