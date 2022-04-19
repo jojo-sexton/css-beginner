@@ -1,54 +1,42 @@
-*{
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-    background:#eee;
+    background: #eee;
 }
-
-.wrapper{
+.wrapper {
     max-width: 960px;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.flex-box{
-    background:#fff;
-    display:flex;
-    flex-wrap:wrap-reverse;
+/* nav mobile*/
+
+nav ul {
+    background: #333;
+    list-style-type: none;
+    padding: 0;
 }
 
-.box {
-    height: 100px;
-    flex-basis: 300px;
-    flex-grow:1;
-    
-    
-}
-
-/* the difference btween flex basis and min-width is that flex basis will shrink to fit when the viewport is less than the min-width, no need to scroll
-
-flex: grow - shrink - basis*/
-
-.one{
-    background: red;
-
-   
-}
-
-.two{
-    background: yellow;
-
-
-   
-}
-
-.three{
-    background: blue;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: center;
  
-   
+}
 
-    
+nav a:hover{
+    background-color: #555;
+}
+
+/*nav in big screen */
+
+@media  screen and (min-width:768px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+       flex: 1 1 0;
+    }
 }
 
