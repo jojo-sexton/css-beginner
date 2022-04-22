@@ -1,5 +1,6 @@
 body{
     background: #eee;
+    margin: 0;
 }
 .wrapper {
     max-width: 960px;
@@ -7,12 +8,20 @@ body{
     margin: 0 auto;
 }
 
-/* nav mobile*/
+nav {
+    background: #333;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* menu base styles*/
 
 nav ul {
-    background: #333;
+    
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -28,15 +37,47 @@ nav a:hover{
     background-color: #555;
 }
 
-/*nav in big screen */
+/*Social menu base styles*/
+a.fb {
+    background: url("fb1.png") no-repeat center;
+    background-size: 80%;
+  
+ 
+}
+a.tw {
+    background: url("tw1.png") no-repeat center;
+    background-size: 80%;
+}
+
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+}
+
+
+/* Flex style*/
+nav ul.social{
+    flex: 1 1 0;
+}
+
+
+/*Responsive: menu in big screen */
 
 @media  screen and (min-width:768px) {
-    nav ul {
+   
+    nav {
         display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;    
     }
 
     nav li {
        flex: 1 1 0;
     }
 }
-
