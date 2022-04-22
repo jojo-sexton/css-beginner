@@ -55,11 +55,17 @@ a.tw {
 
 .social {
     max-width: 80px;
+    margin: 0 auto;
 }
 
 
 /* Flex style*/
 nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li {
     flex: 1 1 0;
 }
 
@@ -79,5 +85,9 @@ nav ul.social{
 
     nav li {
        flex: 1 1 0;
+    }
+
+    .social {
+        margin: 0;
     }
 }
