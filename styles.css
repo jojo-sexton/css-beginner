@@ -1,93 +1,68 @@
-body{
-    background: #eee;
+*{
+    font-family: verdana;
     margin: 0;
 }
+
+body {
+    background: #eee;
+}
+
 .wrapper {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
 }
 
+
+/* Nav Base Styles */
 nav {
     background: #333;
-    padding: 0;
-    margin: 0;
-
 }
 
-/* menu base styles*/
-
 nav ul {
-    
-    list-style-type: none;
     padding: 0;
-    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    text-align: center
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
+    margin: 0;
     display: block;
     padding: 10px;
-    text-align: center;
- 
+  
 }
 
 nav a:hover{
-    background-color: #555;
+    background: #ccc
 }
 
-/*Social menu base styles*/
-a.fb {
-    background: url("fb1.png") no-repeat center;
-    background-size: 80%;
-  
- 
-}
-a.tw {
-    background: url("tw1.png") no-repeat center;
-    background-size: 80%;
-}
+.social img {
+    max-width: 80px;
 
-.social a {
-    text-indent: -10000px;
 }
 
 .social {
-    max-width: 80px;
-    margin: 0 auto;
-}
-
-
-/* Flex style*/
-nav ul.social{
-    flex: 1 1 0;
     display: flex;
+    justify-content: center;
 }
 
-nav ul.social li {
-    flex: 1 1 0;
+.social a:hover{
+    border-radius: 50%;
 }
-
-
-/*Responsive: menu in big screen */
 
 @media  screen and (min-width:768px) {
-   
     nav {
         display: flex;
         justify-content: space-between;
     }
 
     nav ul {
-        display: flex;    
+        display: flex;
     }
 
-    nav li {
-       flex: 1 1 0;
-    }
-
-    .social {
-        margin: 0;
-    }
 }
